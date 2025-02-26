@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Minh Thư</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!DOCTYPE html>
+    <html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio - Minh Thư</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./style.css">
+        <style>
+            body {
+                scroll-behavior: smooth;
+            }
+            .navbar {
+                height: 50px;
+                transition: background-color 0.3s;
+            }
+            .navbar.scrolled {
+                background-color: rgba(0, 0, 0, 0.8) !important;
+            }
+            .hero {
+                height: 100vh;
+                background: linear-gradient(to right, #000428, #004e92);
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                opacity: 0;
+                animation: fadeIn 1s ease-in forwards;
+            }
+            @keyframes fadeIn {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+            .nav-link {
+                transition: color 0.3s;
+            }
+            .nav-link:hover {
+                color: #00c6ff !important;
+            }
+            .card {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            .card-body {
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        </style>
+    </head>
+    <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top custom-navbar">
+      <div class="container">
+          <a class="navbar-brand" href="#">Minh Thư</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center justify-content-center text-white">
+      <div class="text-center">
+          <h1>Xin chào, Tôi là Minh Thư</h1>
+          <p>Web Developer & Tester</p>
+          <a href="#projects" class="btn btn-primary mt-3">Xem dự án</a>
+      </div>
+  </section>
+
+  <section id="about" class="container my-5 text-center">
+    <h2 class="text-center">About Me</h2>
+    <p>Tôi là một lập trình viên fresher với nền tảng về lập trình, phát triển web và kiểm thử phần mềm.</p> 
+    <p>Tôi luôn tìm kiếm cơ hội học hỏi, nâng cao kỹ năng và sẵn sàng tham gia các dự án thực tế.</p>
+</section>
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="container my-5">
+      <h2 class="text-center">Projects</h2>
+      <div class="row">
+          <div class="col-md-6 col-lg-3">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">E-commerce Shoe Store</h5>
+                      <p class="card-text">Ngôn ngữ: Java</p>
+                      <a href="https://github.com/phamthiminhthu9302/E-commerce-shoe-store" class="btn btn-outline-primary">Xem</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Hotel Management</h5>
+                      <p class="card-text">Ngôn ngữ: C#</p>
+                      <a href="https://github.com/phamthiminhthu9302/hotel-management" class="btn btn-outline-primary">Xem</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Weather Forecast</h5>
+                      <p class="card-text">Ngôn ngữ: Java (Android)</p>
+                      <a href="https://github.com/phamthiminhthu9302/Weather" class="btn btn-outline-primary">Xem</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+              <div class="card">
+                  <div class="card-body">
+                      <h5 class="card-title">Flappy Bird</h5>
+                      <p class="card-text">Ngôn ngữ: Python</p>
+                      <a href="https://github.com/phamthiminhthu9302/Flappy-Bird" class="btn btn-outline-primary">Xem</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="container my-5 text-center">
+    <h2 class="text-center">Skills</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-3">
+            <h4>Programming Languages</h4>
+            <ul class="list-unstyled">
+                <li>PHP</li>
+                <li>Java</li>
+                <li>C#</li>
+                <li>C/C++</li>
+                <li>Python</li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h4>Web & Frameworks</h4>
+            <ul class="list-unstyled">
+                <li>Spring Boot</li>
+                <li>Laravel</li>
+                <li>Hibernate</li>
+                <li>JPA</li>
+                <li>Java Servlet & JSP</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>jQuery, Bootstrap</li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h4>Database</h4>
+            <ul class="list-unstyled">
+                <li>SQL Server</li>
+                <li>MySQL</li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h4>Testing & Tools</h4>
+            <ul class="list-unstyled">
+                <li>Selenium</li>
+                <li>JMeter</li>
+                <li>JUnit</li>
+                <li>Postman</li>
+                <li>Jira</li>
+                <li>GitHub</li>
+                <li>SourceTree</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light py-5">
+      <div class="container text-center">
+          <h2>Contact Me</h2>
+          <p>Email: <a href="mailto:phamthiminhthu9302@gmail.com">phamthiminhthu9302@gmail.com</a></p>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+      &copy; 2025 Minh Thư. All Rights Reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
